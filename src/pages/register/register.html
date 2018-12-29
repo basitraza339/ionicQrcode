@@ -1,0 +1,37 @@
+<ion-header >
+
+  <ion-navbar>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="registercss">
+	<form>
+	<ion-list>
+		<ion-item>
+  		  	<ion-label stacked >Name</ion-label>
+  		  	<ion-input type="text" name="name"  placeholder="Enter Name" [(ngModel)]="name" ></ion-input>
+  		</ion-item>
+  		<ion-item>
+  		  	<ion-label stacked >Email</ion-label>
+  		  	<ion-input type="email" name="email"  placeholder="Enter Email" [(ngModel)]="email" ></ion-input>
+  		</ion-item>
+		
+  		<ion-item>
+  		  <ion-label stacked>Password</ion-label>
+  		  <ion-input type="password" name="pin" placeholder="password" [(ngModel)]="pin"></ion-input>
+  		</ion-item>
+
+  		<ion-item>
+  		  <ion-label stacked>Phone No</ion-label>
+  		  <ion-input type="number" name="number" placeholder="Enter Number" [(ngModel)]="number"></ion-input>
+  		</ion-item>
+      <br>
+      <div>
+        <button ion-button full no-padding (click)="registerSubmit()">Submit</button>
+      </div>
+	</ion-list>
+</form>
+	
+</ion-content>
